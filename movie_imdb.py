@@ -6,7 +6,7 @@ try:
     from bs4 import BeautifulSoup
     from pyfiglet import Figlet
 except:
-    print('Please install reqeusts and bs4 module')
+    print('Please install reqeusts, pyfiglet and bs4 module')
     sys.exit(1)
 
 search_url = 'http://www.google.co.in/search?q={}+ imdb'
@@ -18,7 +18,6 @@ print(f.renderText('by\nMohit'))
 
 try:
     movie_list = os.listdir(input('Please Enter path to Movie directory: '))
-    #movie_list = ['Toilet ek prem']
 except:
     print('Please Enter a valid path')
     sys.exit(1)
